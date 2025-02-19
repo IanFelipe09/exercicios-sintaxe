@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Análise Sintática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .resposta {
+            display: none;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        button {
+            margin-top: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function mostrarResposta(id) {
+            var resposta = document.getElementById(id);
+            if (resposta.style.display === "none") {
+                resposta.style.display = "block";
+            } else {
+                resposta.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>1. Classifique as frases abaixo:</h2>
+
+    <p><b>1.</b> "Amanhã teremos prova de português."</p>
+    <button onclick="mostrarResposta('resposta1')">Mostrar Resposta</button>
+    <p id="resposta1" class="resposta">Declarativa afirmativa</p>
+
+    <p><b>2.</b> "Não gosto de acordar cedo."</p>
+    <button onclick="mostrarResposta('resposta2')">Mostrar Resposta</button>
+    <p id="resposta2" class="resposta">Declarativa negativa</p>
+
+    <p><b>3.</b> "Você estudou para a prova?"</p>
+    <button onclick="mostrarResposta('resposta3')">Mostrar Resposta</button>
+    <p id="resposta3" class="resposta">Interrogativa direta</p>
+
+    <p><b>4.</b> "Gostaria de saber se você estudou para a prova."</p>
+    <button onclick="mostrarResposta('resposta4')">Mostrar Resposta</button>
+    <p id="resposta4" class="resposta">Interrogativa indireta</p>
+
+    <p><b>5.</b> "Que dia maravilhoso!"</p>
+    <button onclick="mostrarResposta('resposta5')">Mostrar Resposta</button>
+    <p id="resposta5" class="resposta">Exclamativa</p>
+
+    <p><b>6.</b> "Desejo que todos sejam felizes."</p>
+    <button onclick="mostrarResposta('resposta6')">Mostrar Resposta</button>
+    <p id="resposta6" class="resposta">Optativa</p>
+
+    <p><b>7.</b> "Apague a televisão antes de dormir."</p>
+    <button onclick="mostrarResposta('resposta7')">Mostrar Resposta</button>
+    <p id="resposta7" class="resposta">Imperativa</p>
+
+    <h2>2. Identifique se é frase, oração ou período:</h2>
+
+    <p><b>8.</b> "Bom dia!"</p>
+    <button onclick="mostrarResposta('resposta8')">Mostrar Resposta</button>
+    <p id="resposta8" class="resposta">Frase nominal</p>
+
+    <p><b>9.</b> "Hoje está muito frio."</p>
+    <button onclick="mostrarResposta('resposta9')">Mostrar Resposta</button>
+    <p id="resposta9" class="resposta">Período simples</p>
+
+    <p><b>10.</b> "O sol apareceu e as crianças foram brincar."</p>
+    <button onclick="mostrarResposta('resposta10')">Mostrar Resposta</button>
+    <p id="resposta10" class="resposta">Período composto</p>
+
+    <h2>3. Identifique o tipo de sujeito:</h2>
+
+    <p><b>11.</b> "As meninas dançaram na festa."</p>
+    <button onclick="mostrarResposta('resposta11')">Mostrar Resposta</button>
+    <p id="resposta11" class="resposta">Sujeito determinado simples</p>
+
+    <p><b>12.</b> "Pedro e João compraram sorvete."</p>
+    <button onclick="mostrarResposta('resposta12')">Mostrar Resposta</button>
+    <p id="resposta12" class="resposta">Sujeito determinado composto</p>
+
+    <p><b>13.</b> "Compraram todos os ingressos do cinema."</p>
+    <button onclick="mostrarResposta('resposta13')">Mostrar Resposta</button>
+    <p id="resposta13" class="resposta">Sujeito indeterminado</p>
+
+    <p><b>14.</b> "Choveu muito na cidade ontem."</p>
+    <button onclick="mostrarResposta('resposta14')">Mostrar Resposta</button>
+    <p id="resposta14" class="resposta">Oração sem sujeito</p>
+
+    <p><b>15.</b> "Preciso estudar mais para a prova."</p>
+    <button onclick="mostrarResposta('resposta15')">Mostrar Resposta</button>
+    <p id="resposta15" class="resposta">Sujeito oculto (eu)</p>
+
+    <h2>4. Diferencie Período Simples e Período Composto:</h2>
+
+    <p><b>16.</b> "O cachorro latiu a noite toda."</p>
+    <button onclick="mostrarResposta('resposta16')">Mostrar Resposta</button>
+    <p id="resposta16" class="resposta">Período simples</p>
+
+    <p><b>17.</b> "Fui à escola e depois visitei minha avó."</p>
+    <button onclick="mostrarResposta('resposta17')">Mostrar Resposta</button>
+    <p id="resposta17" class="resposta">Período composto</p>
+
+    <h2>5. Identifique os verbos impessoais:</h2>
+
+    <p><b>18.</b> "Há muitos anos não nos vemos."</p>
+    <button onclick="mostrarResposta('resposta18')">Mostrar Resposta</button>
+    <p id="resposta18" class="resposta">Verbo impessoal ("haver" com sentido de tempo)</p>
+
+    <p><b>19.</b> "Faz muito calor hoje."</p>
+    <button onclick="mostrarResposta('resposta19')">Mostrar Resposta</button>
+    <p id="resposta19" class="resposta">Verbo impessoal ("fazer" com ideia de tempo)</p>
+
+    <p><b>20.</b> "Anoiteceu rapidamente."</p>
+    <button onclick="mostrarResposta('resposta20')">Mostrar Resposta</button>
+    <p id="resposta20" class="resposta">Verbo impessoal ("anoitecer", fenômeno da natureza)</p>
+
+</body>
+</html>
